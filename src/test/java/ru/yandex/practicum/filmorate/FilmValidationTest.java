@@ -26,7 +26,7 @@ public class FilmValidationTest {
                 ValidationException.class,
                 () -> controller.addFilm(film)
         );
-        assertEquals("название фильма не должно быть пустым", exception.getMessage());
+        assertEquals("название фильма не должно быть пусто", exception.getMessage());
     }
 
     @Test
